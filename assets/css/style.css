@@ -18,6 +18,12 @@ header {
     align-items: center;
     gap: 10px;
     padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 2;
 }
 
 header button {
@@ -39,7 +45,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1%;
-    /* flex-basis: calc(100 / 7); */
 }
 
 #room .profile {
@@ -67,4 +72,58 @@ main {
 #room .profile div h6 {
     display: inline;
     text-transform: capitalize;
+}
+
+/* FOOTER STYLE */
+
+footer {
+    background-color: #222;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer>.flex-container {
+    align-items: center;
+}
+
+
+.btn-dropdown {
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-dropdown>i {
+    font-size: 10px;
+}
+
+.btn-action {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-action>i {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.btn-action>h6 {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.btn-end {
+    color: red;
+    background-color: #4A4A4A;
+    border: none;
+    padding-inline: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
 }
