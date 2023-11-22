@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    height: 100vh;
+    font-family: sans-serif;
 }
 
 .flex-container {
@@ -26,5 +26,45 @@ header button {
     background-color: #4A4A4A;
     color: white;
     border-radius: 5px;
+    text-transform: capitalize;
+}
+
+main {
+    padding-inline: 5%;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+#room {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    /* flex-basis: calc(100 / 7); */
+}
+
+#room .profile {
+    position: relative;
+    margin-bottom: 1%;
+    max-height: 150px;
+    width: 200px;
+}
+
+#room .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#room .profile div {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #4a4a4ac6;
+    padding: 3px;
+}
+
+#room .profile div h6 {
+    display: inline;
     text-transform: capitalize;
 }
